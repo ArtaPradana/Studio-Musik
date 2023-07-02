@@ -1,16 +1,19 @@
 // Form Login
-let passwordInput = document.getElementById("password");
-let togglePassword = document.getElementById("togglePassword");
+function melihatPassword(id1, id2) {
+  let passwordInput = document.getElementById(id1);
+  let togglePassword = document.getElementById(id2);
 
-togglePassword.addEventListener("click", function () {
-  if (passwordInput.type === "password") {
-    passwordInput.type = "text";
-    togglePassword.innerHTML = '<i class="fas fa-eye-slash"></i>';
-  } else {
-    passwordInput.type = "password";
-    togglePassword.innerHTML = '<i class="fas fa-eye"></i>';
-  }
-});
+  togglePassword.addEventListener("click", () => {
+    if (passwordInput.type === "password") {
+      passwordInput.type = "text";
+      togglePassword.innerHTML = '<i class="fas fa-eye-slash"></i>';
+    } else {
+      passwordInput.type = "password";
+      togglePassword.innerHTML = '<i class="fas fa-eye"></i>';
+    }
+  });
+}
+melihatPassword("password", "togglePassword");
 
 document.getElementById("formLogin").addEventListener("submit", function (e) {
   e.preventDefault();
