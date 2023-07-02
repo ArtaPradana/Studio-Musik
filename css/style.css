@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Death Spirit";
+  src: url("/fonts/Death Spirit.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Form Login */
+body {
+  height: 100vh;
+  background-image: url("/gambar/studio.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  margin-top: 10em;
+  padding: 2em 2em 3em 2em;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  opacity: 1;
+  border-radius: 2rem;
+}
+
+.img {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-family: "Death Spirit";
+  font-size: 30px;
+  color: brown;
+}
+
+form {
+  display: grid;
+}
+
+form > article input,
+input[type="submit"] {
+  width: 20em;
+  height: 3em;
+  margin-bottom: 5px;
+  border-radius: 8px;
+  border-style: none;
+  outline: none;
+}
+
+form > article input[type="email"]:focus,
+form > article input[type="password"]:focus {
+  border: brown solid 2px;
+}
+
+input[type="submit"] {
+  background-color: brown;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+input[placeholder] {
+  padding-left: 10px;
+}
+
+input[placeholder],
+input[value] {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#togglePassword {
+  margin: 0em 0em 0em 0em;
+}
+
+.sandi {
+  text-decoration: none;
+  font-size: 12px;
+  padding-left: 5px;
+  margin: 0px 0px 9px 0px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.akun {
+  margin: auto;
+}
+
+.akun > span {
+  text-decoration: none;
+  font-size: 12px;
+  color: brown;
+  font-weight: bold;
+}
+
+.akun > a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#togglePassword {
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  background: none;
+  border: none;
+  margin: -7.5em 0em 0em 19em;
+}
+
+/* Akhir Form Login  */
